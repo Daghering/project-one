@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
     <script src="https://kit.fontawesome.com/54d4d4d066.js" crossorigin="anonymous"></script>
 
     <title>Document</title>
@@ -17,21 +17,19 @@
             <img class="logo" alt="Aloha Apparel logo" src="images/aloha-logo.svg"/>
             <img class="cart"alt="Shopping Cart" src="images/cart-icon.svg"/>
         </div>
-        <hr />
+        <hr class="header-line" />
     <nav>
         <ul class="nav-bar">
-            <li> <a href="#nav-item">ABOUT</a></li>
-            <li> <a href="#nav-item">SHOP</a></li>
-            <li> <a href="#nav-item">FEATURED</a></li>
-            <li> <a href="#nav-item">UPDATES</a></li>
+            <li> <a href="#hero-banner">ABOUT</a></li>
+            <li> <a href="#list">SHOP</a></li>
+            <li> <a href="#car">FEATURED</a></li>
+            <li> <a href="#sign-up">UPDATES</a></li>
             </ul>
         </nav>
-        
+    
     </header>
+    <section class="empty-header"></section>
 
-    <section class="empty-header">
-
-    </section>
     <section class="banner" id="hero-banner"> 
         <div class="banner-text">
         <p>New Collection</p>
@@ -47,7 +45,7 @@
             </p>
         </section>
 
-        <section class="list">
+        <section class="list" id="list">
             <div>MEN'S</div>
             <div>TRENDS</div>
             <div>GLASSES</div>       
@@ -57,10 +55,15 @@
        
         </section>
 
-        <section>
-            <h2>Most-Loved Products</h2>
-            <div>
-                <figure>
+        <section class="car" id="car">
+            <h2>Most-Loved <span class="products">Products<span></h2>
+            
+            
+                <div class="carousel js-flickity" >
+                
+                    <div class="carousel-cell">
+    
+                    <figure>
                     <img alt="" src="images/checked-stretch-dress.jpg"/>
                     <span>Dresses</span>
                     <h3>Stretch Knit Dress</h3>
@@ -68,6 +71,10 @@
                     <button>Add to Cart</button>
 
                 </figure>
+
+                </div>
+                
+                <div class="carousel-cell">
                 <figure>
                     <img alt="" src="images/cotton-blue-shirt.jpg"/>
                     <span>Shirts</span>
@@ -76,6 +83,9 @@
                     <button>Add to Cart</button>
 
                 </figure>
+            </div>
+
+                    <div class="carousel-cell">
                 <figure>
                     <img alt="" src="images/demin-overall-shorts.jpg"/>
                     <span>Shorts</span>
@@ -84,24 +94,48 @@
                     <button>Add to Cart</button>
 
                 </figure>
-                <br/>
+                </div>
+
+                <div class="carousel-cell">
+
+                <figure>
+                    <img alt="" src="images/pink-dotted-dress.jpg"/>
+                    <span>Dresses</span>
+                    <h3>Pink Dotted Dress</h3>
+                    <p>$79.00</p>
+                    <button>Add to Cart</button>
+
+                </figure>
+                </div>
+
+                <div class="carousel-cell" >
+                <figure>
+                    <img alt="" src="images/stretch-knit-dress.jpg"/>
+                    <span>Dress</span>
+                    <h3>Stretch Knit Dress</h3>
+                    <p>$69.00</p>
+                    <button>Add to Cart</button>
+                </figure>
+                </div>
+
             </div>
         </section>
-        <section class="sign-up">
+
+        <section class="sign-up" id="sign-up">
          
-             <h2>Sign-up for <span class="updates">Updates</span></h2>
+             <h2>Sign-up for <span class="updates">Updates</span></h2><br />
              
              <P>Stay updated on our latest product reelases, be first to find out about upcoming sales,
-                and get free style tips from our blog. Unsubscribe at any time</P>
-             <form class="email" action="email.php" method="POST">
-                    <input class="email-field" type="email" name="Email" placeholder="Your Email">
+                and get free style tips from our blog. Unsubscribe at any time.</P>
+             <form class="email">
+                    <input class="email-field" type="email" name="Email" placeholder="Your Email" required>
                     <input class="subscribe" type="submit" value="subscribe">
-                </form>   
+            </form>   
                 
         </section>
     </main>
 
-<footer >
+<footer>
    <section class="info">   
        <p> ©2019 Aloha Apparel Co. <br/>
         Powered by HTML and CSS</p> <br/>
@@ -120,6 +154,14 @@
     
 </footer>
         
-    
+<script src="js/app.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+
+ 
 </body>
+
 </html>
+
+
+
+
