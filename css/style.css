@@ -101,12 +101,9 @@
   font-style: italic;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
-
-/* Nav section */
 
 h1,
 h2,
@@ -132,7 +129,7 @@ header {
   position: fixed;
   background: white;
   z-index: 9999;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
 }
 
 .empty-header {
@@ -155,6 +152,10 @@ header {
   align-items: center;
   list-style: none;
   color: #e2574c;
+}
+
+.nav-bar li {
+  padding-top: 5px;
 }
 
 .nav-bar li a:hover {
@@ -302,7 +303,7 @@ header {
   margin-top: 5px;
 }
 
-.car{
+.car {
   height: 450px;
 }
 
@@ -314,37 +315,41 @@ header {
   margin-top: 30px;
 }
 
-figure span,h3,p {
+figure span {
+  color: #a9a9a9;
+  font-family: "Raleway Bold";
+}
+
+figure span p {
   text-align: center;
-  
+  font-family: "Raleway Bold";
   line-height: 2em;
-  /* margin-bottom: 30px; */
+  color: #a9a9a9;
 }
 
 figure p {
   margin-bottom: 40px;
+  text-align: center;
+  font-family: "Raleway Bold";
+  line-height: 2em;
+  color: #a9a9a9;
 }
 
-
-
- figure h3 {
+figure h3 {
   color: #e2574c;
-}
-
-figure span,p {
-  /* color: darkgrey; */
-  margin-bottom: 0px;
-  /* margin-bottom: -50px; */
+  text-align: center;
+  font-family: "Raleway Bold";
+  line-height: 2em;
 }
 
 figure span {
   display: block;
-  
-} 
-
+  text-align: center;
+  font-family: "Raleway Bold";
+  line-height: 2em;
+}
 
 .carousel button {
-  
 }
 
 .products {
@@ -369,7 +374,6 @@ button {
 }
 
 .sign-up h2 {
-  /* position: absolute; */
   text-align: center;
   font-family: "Playfair Display Italic";
   font-size: 2em;
@@ -383,9 +387,8 @@ button {
 }
 
 .sign-up p {
-  /* position: absolute; */
   text-align: center;
-  /* padding-bottom: -5px; */
+
   line-height: 35px;
   color: white;
   text-shadow: 1px 1px 2px grey;
@@ -425,18 +428,15 @@ footer {
   background-color: #242424;
   color: white;
   flex-direction: column;
-  font-family:  "Playfair Display";
+  font-family: "Playfair Display";
   height: 250px;
   text-align: center;
   justify-content: center;
   margin-top: 9px;
-
 }
 
 .info p {
   line-height: 20px;
-  
-  
 }
 
 .social-networks {
@@ -446,13 +446,12 @@ footer {
   /* align-items: center; */
   font-size: 14px;
   padding: 20px 150px 0px 150px;
-  
+
   color: white;
-  
 }
 
 .social-networks li {
-padding: 5px;
+  padding: 5px;
 }
 
 .email-address {
@@ -467,17 +466,12 @@ padding: 5px;
   color: darkgrey;
 }
 
-
-
 /* Breakpoint for tablets  */
 
 @media (min-width: 600px) {
- 
   body {
-  font-size: 16px;
-  /* width: 100%; */
- }
-
+    font-size: 16px;
+  }
 
   header {
     width: 100%;
@@ -490,9 +484,9 @@ padding: 5px;
     margin-top: -2.5em;
     margin-left: 16em;
     align-items: center;
-    
+
     padding-right: 30%;
-    
+
     justify-content: space-evenly;
     padding-bottom: 15px;
   }
@@ -546,7 +540,6 @@ padding: 5px;
   button {
     display: none;
   }
-  
 
   .sign-up h2 {
     text-align: center;
@@ -597,26 +590,23 @@ padding: 5px;
   }
 
   footer {
-    height: 340px;
+    height: 320px;
     flex-direction: row;
     justify-content: space-between;
   }
-  .info p {
-   /* justify-content: flex-start; */
-   text-align: start;
-   margin-top: 80px;
-   margin-bottom: -60px;
-   
 
- 
-      }
+  .info p {
+    text-align: start;
+    margin-top: 80px;
+    margin-bottom: -60px;
+    margin-left: 15px;
+  }
 
   .social-networks {
     flex-direction: column;
-    padding: 135px; 
-
-    /* align-items: center; */
-
+    padding: 135px;
+    /* align-items: flex-end; */
+    /* margin-left: 335px; */
   }
 
   .social-networks span {
@@ -625,10 +615,14 @@ padding: 5px;
   }
 
   .social-networks li {
-
     padding: 10px;
+    /* justify-content: flex-end; */
+
+    /* margin-left: 300px; */
   }
 }
+
+
 
 /* Breakpoint Desktop */
 
@@ -638,13 +632,15 @@ padding: 5px;
     height: 195.92px;
   }
 
+  .nav-bar {
+  }
+
   .social-networks span {
     display: inline;
   }
-}
 
-
-button {
-  /* display: initial; */
-  /* margin-left: 120px; */
+  button {
+    display: initial;
+    /* margin-left: 120px; */
+  }
 }
