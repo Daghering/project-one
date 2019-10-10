@@ -101,6 +101,11 @@
   font-style: italic;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Nav section */
 
 h1,
@@ -230,6 +235,7 @@ header {
 .list {
   display: flex;
   text-align: center;
+
   color: white;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -296,21 +302,49 @@ header {
   margin-top: 5px;
 }
 
+.car{
+  height: 450px;
+}
+
 .car h2 {
   font-size: 1.8em;
   font-family: "Playfair Display Italic";
   text-align: center;
   font-style: "italic";
+  margin-top: 30px;
 }
 
-.carousel-cell h3 {
+figure span,h3,p {
+  text-align: center;
+  
+  line-height: 2em;
+  /* margin-bottom: 30px; */
+}
+
+figure p {
+  margin-bottom: 40px;
+}
+
+
+
+ figure h3 {
   color: #e2574c;
 }
 
-.carousel p {
+figure span,p {
+  /* color: darkgrey; */
+  margin-bottom: 0px;
+  /* margin-bottom: -50px; */
 }
 
+figure span {
+  display: block;
+  
+} 
+
+
 .carousel button {
+  
 }
 
 .products {
@@ -361,7 +395,7 @@ button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 20px;
   margin-left: 25px;
 }
 
@@ -389,22 +423,20 @@ button {
 footer {
   display: flex;
   background-color: #242424;
+  color: white;
   flex-direction: column;
-  height: 200px;
+  font-family:  "Playfair Display";
+  height: 250px;
   text-align: center;
   justify-content: center;
+  margin-top: 9px;
 
 }
 
-.info {
-  /* display: flex; */
-  /* height: 300px; */
+.info p {
+  line-height: 20px;
   
-  color: white;
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* text-align: center; */
+  
 }
 
 .social-networks {
@@ -413,13 +445,14 @@ footer {
   list-style-type: none;
   /* align-items: center; */
   font-size: 14px;
+  padding: 20px 150px 0px 150px;
   
   color: white;
   
 }
 
 .social-networks li {
-padding: 30px;
+padding: 5px;
 }
 
 .email-address {
@@ -434,9 +467,18 @@ padding: 30px;
   color: darkgrey;
 }
 
+
+
 /* Breakpoint for tablets  */
 
 @media (min-width: 600px) {
+ 
+  body {
+  font-size: 16px;
+  /* width: 100%; */
+ }
+
+
   header {
     width: 100%;
   }
@@ -448,18 +490,18 @@ padding: 30px;
     margin-top: -2.5em;
     margin-left: 16em;
     align-items: center;
-    /* position: relative; */
-    /* padding-left: 30%; */
+    
     padding-right: 30%;
-    /* flex-direction: center;  */
+    
     justify-content: space-evenly;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 
   .cart {
     width: 10%;
     height: 10%;
     margin-top: 14px;
+    margin-right: 20px;
   }
 
   .list {
@@ -502,8 +544,9 @@ padding: 30px;
   }
 
   button {
-    display: initial;
+    display: none;
   }
+  
 
   .sign-up h2 {
     text-align: center;
@@ -554,24 +597,31 @@ padding: 30px;
   }
 
   footer {
-    /* display: flex; */
-    /* flex-direction: row; */
+    height: 340px;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .info {
-    /* justify-content: left; */
-    /* text-align: left; */
-    /* flex-direction: column; */
-    /* align-items: flex-start; */
+  .info p {
+   /* justify-content: flex-start; */
+   text-align: start;
+   margin-top: 80px;
+   margin-bottom: -60px;
+   
+
+ 
       }
 
   .social-networks {
     flex-direction: column;
-    /* align-items: flex-end; */
+    padding: 135px; 
+
+    /* align-items: center; */
 
   }
 
   .social-networks span {
     display: inline;
+    margin-left: 10px;
   }
 
   .social-networks li {
@@ -591,4 +641,10 @@ padding: 30px;
   .social-networks span {
     display: inline;
   }
+}
+
+
+button {
+  /* display: initial; */
+  /* margin-left: 120px; */
 }
