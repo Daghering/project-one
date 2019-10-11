@@ -111,11 +111,7 @@ a {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: "Playfair Display";
   font-style: Italic;
 }
@@ -343,7 +339,7 @@ figure p {
 figure h3 {
   color: #e2574c;
   text-align: center;
-  font-family: "Raleway Bold";
+  font-family: "Raleway";
   line-height: 2em;
 }
 
@@ -352,9 +348,6 @@ figure span {
   text-align: center;
   font-family: "Raleway Bold";
   line-height: 2em;
-}
-
-.carousel button {
 }
 
 .products {
@@ -423,6 +416,7 @@ button {
   background-color: #e2574c;
   color: white;
   border-radius: 25px;
+  border-style: none;
   margin-bottom: 175px;
   height: 42px;
   width: 100px;
@@ -451,8 +445,6 @@ footer {
   /* align-items: center; */
   font-size: 14px;
   padding: 20px 150px 0px 150px;
-  
-  
 
   color: white;
 }
@@ -461,7 +453,6 @@ footer {
   padding: 4px;
 }
 
-
 .social-networks span {
   display: none;
 }
@@ -469,7 +460,6 @@ footer {
 .email-address {
   color: white;
 }
-
 
 .address {
   color: darkgrey;
@@ -499,12 +489,10 @@ footer {
     justify-content: space-evenly;
     padding-bottom: 15px;
   }
-  
+
   .nav-bar li {
     padding: 0px 5px 0px 5px;
-
   }
-
 
   .cart {
     width: 10%;
@@ -512,6 +500,10 @@ footer {
     margin-top: 14px;
     margin-right: 20px;
   }
+
+.about p {
+  padding: 15px 30px 0px 30px;
+}
 
   .list {
     display: flex;
@@ -555,6 +547,9 @@ footer {
   button {
     display: none;
   }
+  .sign-up {
+    margin-top: 80px;
+  }
 
   .sign-up h2 {
     text-align: center;
@@ -574,6 +569,7 @@ footer {
     line-height: 35px;
     color: white;
     text-shadow: 1px 1px 2px grey;
+    padding: 0px 60px 0px 60px;
   }
 
   .email {
@@ -587,12 +583,13 @@ footer {
   .email-field {
     position: relative;
     border-radius: 25px;
+    border-style: none;
     padding: 15px 80px 15px 15px;
     color: #969696;
     margin-right: -5px;
     text-align: left;
     width: 230px;
-    height: 15px;
+    height: 7px;
   }
 
   .subscribe {
@@ -615,13 +612,12 @@ footer {
     margin-top: 90px;
     margin-bottom: -85px;
     margin-left: 15px;
-    
   }
 
   .social-networks {
     flex-direction: column;
     padding: 50px 35px 50px 0px;
-    
+
     /* align-items: flex-end; */
     /* margin-left: 100px; */
   }
@@ -639,27 +635,25 @@ footer {
   }
 }
 
-
-
 /* Breakpoint Desktop */
 
 @media (min-width: 1240px) {
-  
   header {
     padding-bottom: 0px;
   }
-  
+
   .empty-header {
     background: white;
-    
   }
 
   .logo {
-    width: 15%;
+    width: 12%;
+    padding-left: 25px;
   }
 
   .cart {
-    width: 8%;
+    width: 6%;
+    padding-right: 22px;
   }
 
   .nav-bar {
@@ -669,7 +663,6 @@ footer {
 
     padding-right: 0px;
 
-   
     padding-bottom: 0px;
     padding-top: 0px;
   }
@@ -680,18 +673,15 @@ footer {
   }
 
   .logo {
-    
   }
 
   .carousel-cell {
     /* margin-bottom: 250px; */
   }
 
-
   .car {
     height: 480px;
   }
-
 
   .car button {
     display: initial;
@@ -701,24 +691,16 @@ footer {
     background-color: black;
     border-radius: 25px;
     border-style: none;
-   
-
-    
   }
 
-.sign-up {
+  .sign-up {
+  }
 
-
-}
-
-.subscribe {
-  height: 45px;
-}
+  .subscribe {
+    height: 30px;
+  }
 
   .social-networks span {
     display: inline;
   }
-
 }
-
- 
