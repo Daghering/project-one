@@ -105,6 +105,11 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 h1,
 h2,
 h3,
@@ -328,7 +333,7 @@ figure span p {
 }
 
 figure p {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   text-align: center;
   font-family: "Raleway Bold";
   line-height: 2em;
@@ -446,21 +451,25 @@ footer {
   /* align-items: center; */
   font-size: 14px;
   padding: 20px 150px 0px 150px;
+  
+  
 
   color: white;
 }
 
 .social-networks li {
-  padding: 5px;
+  padding: 4px;
+}
+
+
+.social-networks span {
+  display: none;
 }
 
 .email-address {
   color: white;
 }
 
-.social-networks span {
-  display: none;
-}
 
 .address {
   color: darkgrey;
@@ -490,6 +499,12 @@ footer {
     justify-content: space-evenly;
     padding-bottom: 15px;
   }
+  
+  .nav-bar li {
+    padding: 0px 5px 0px 5px;
+
+  }
+
 
   .cart {
     width: 10%;
@@ -572,7 +587,7 @@ footer {
   .email-field {
     position: relative;
     border-radius: 25px;
-    padding: 3px 80px 15px 15px;
+    padding: 15px 80px 15px 15px;
     color: #969696;
     margin-right: -5px;
     text-align: left;
@@ -590,23 +605,25 @@ footer {
   }
 
   footer {
-    height: 320px;
+    height: 300px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .info p {
     text-align: start;
-    margin-top: 80px;
-    margin-bottom: -60px;
+    margin-top: 90px;
+    margin-bottom: -85px;
     margin-left: 15px;
+    
   }
 
   .social-networks {
     flex-direction: column;
-    padding: 135px;
+    padding: 50px 35px 50px 0px;
+    
     /* align-items: flex-end; */
-    /* margin-left: 335px; */
+    /* margin-left: 100px; */
   }
 
   .social-networks span {
@@ -615,7 +632,7 @@ footer {
   }
 
   .social-networks li {
-    padding: 10px;
+    /* padding: 10px; */
     /* justify-content: flex-end; */
 
     /* margin-left: 300px; */
@@ -627,20 +644,81 @@ footer {
 /* Breakpoint Desktop */
 
 @media (min-width: 1240px) {
+  
+  header {
+    padding-bottom: 0px;
+  }
+  
   .empty-header {
     background: white;
-    height: 195.92px;
+    
+  }
+
+  .logo {
+    width: 15%;
+  }
+
+  .cart {
+    width: 8%;
   }
 
   .nav-bar {
+    margin-top: 0em;
+    margin-left: 0em;
+    justify-content: center;
+
+    padding-right: 0px;
+
+   
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
+
+  .nav-bar li {
+    padding: 5px;
+    margin-top: -100px;
+  }
+
+  .logo {
+    
+  }
+
+  .carousel-cell {
+    /* margin-bottom: 250px; */
+  }
+
+
+  .car {
+    height: 480px;
+  }
+
+
+  .car button {
+    display: initial;
+    margin-left: 120px;
+    /* margin-top: 10px; */
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    border-style: none;
+   
+
+    
+  }
+
+.sign-up {
+
+
+}
+
+.subscribe {
+  height: 45px;
+}
 
   .social-networks span {
     display: inline;
   }
 
-  button {
-    display: initial;
-    /* margin-left: 120px; */
-  }
 }
+
+ 
