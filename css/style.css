@@ -693,7 +693,9 @@ footer {
     border-style: none;
   }
 
-  .sign-up {
+  .sign-up p {
+
+    padding: 0px 350px 0px 350px;
   }
 
   .subscribe {
