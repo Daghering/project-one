@@ -38,16 +38,4 @@ function IsEmailValid(input) {
 
 // Cart Badge Counter
 
-//     var completedIncrements =  [];
-
-//     $('.addcart').on('click', function () {
-
-//     console.log(completedIncrements.indexOf(this.id));
-
-//     if( completedIncrements.indexOf(this.id) == -1 ) {
-//     var count =   parseInt($("#counter").text());
-//      $("#counter").html(count + 1);
-
-//       completedIncrements.push(this.id);
-//   }
-//     }
+  
