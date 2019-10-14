@@ -207,6 +207,7 @@ header {
 
 .badge {
   position: absolute;
+  display: none;
   font-family: "Raleway";
   top: 8px;
   right: 2px;
@@ -665,6 +666,7 @@ footer {
   }
 
   .badge {
+    display: initial;
     margin-right: 45px;
   }
 
