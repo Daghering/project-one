@@ -1,15 +1,15 @@
-// 1.Grabbing the email form by id
+
 const emailForm = document.getElementById("email-valid");
 
-// 2.Adding the event listener to the submit button
+
 emailForm.addEventListener("submit", function(event) {
   event.preventDefault();
-  //When clicked below with execute.
+  
 
-  //3.Grabbing the text box.
+  
   const textBox = document.getElementById("emailInput");
 
-  //4.Taking the data (the email string) from the text box.
+  
   const formData = textBox.value;
   console.log(formData);
 
@@ -36,6 +36,23 @@ function IsEmailValid(input) {
   }
 }
 
-// Cart Badge Counter
 
-  
+
+// Cart Badge Counter
+var badge = document.getElementById("counter");
+var counter = document.getElementById("counter-button");
+var x =1;
+         
+counter.addEventListener('click', function () {
+    
+    badge.textContent = x++;
+  });
+
+      
+
+
+
+
+
+
+
