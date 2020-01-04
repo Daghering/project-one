@@ -39,14 +39,18 @@ function IsEmailValid(input) {
 
 
 // Cart Badge Counter
-var badge = document.getElementById("counter");
-var counter = document.getElementById("counter-button");
-var x =1;
-         
-counter.addEventListener('click', function () {
-    
-    badge.textContent = x++;
-  });
+const cart = document.querySelectorAll(".btn");
+const cartNumber = document.getElementById("counter");
+const shoppingCart = [];
+
+let clicks = 0;
+
+cart.forEach(function(element, index) {
+  cart[index].addEventListener("click", function add(event) {
+    clicks += 1
+    cartNumber.innerHTML = clicks
+  })
+})
 
       
 

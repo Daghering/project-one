@@ -213,12 +213,13 @@ header {
   right: 2px;
   padding: 4px 8px;
   border-radius: 50%;
-  background:#e2574c;
+  background: #e2574c;
   color: white;
 }
 
 .badge:hover {
   background: #b64036;
+  cursor: pointer;
 }
 
 .cart {
@@ -254,7 +255,6 @@ header {
   display: flex;
   text-align: center;
   font-family: "Raleway";
-
   color: white;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -346,7 +346,6 @@ figure span p {
 }
 
 figure p {
-  /* margin-bottom: 40px; */
   text-align: center;
   font-family: "Raleway Bold";
   line-height: 2em;
@@ -374,6 +373,7 @@ figure span {
 
 button {
   display: none;
+  cursor: pointer;
 }
 
 .sign-up {
@@ -685,7 +685,6 @@ footer {
   .nav-bar li {
     padding: 5px;
     margin-top: -60px;
-    
   }
 
   .car {
@@ -706,7 +705,6 @@ footer {
   .about p {
     padding-right: 300px;
     padding-left: 300px;
-
   }
 
   .sign-up p {
@@ -718,14 +716,10 @@ footer {
   }
 
   .social-networks {
-    
     padding: 60px 75px 50px 0px;
   }
 
   .social-networks span {
     display: inline;
   }
-
-
-  
 }
